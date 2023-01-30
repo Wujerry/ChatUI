@@ -34,7 +34,6 @@
     "@babel/runtime-corejs3": "^7.18.3",
     "clsx": "^1.1.1",
     "core-js": "^3.23.1",
-    "dompurify": "^2.3.8",
     "intersection-observer": "^0.12.2"
   },
   "devDependencies": {
@@ -52,7 +51,6 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
-    "@types/dompurify": "^2.3.3",
     "@types/jest": "^28.1.1",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.17",
