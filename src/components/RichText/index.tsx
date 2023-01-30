@@ -4,6 +4,7 @@ import clsx from 'clsx';
 export interface RichTextProps extends React.HTMLAttributes<HTMLDivElement> {
   content: string;
   className?: string;
+  options?: any;
 }
 
 export const RichText = React.forwardRef<HTMLDivElement, RichTextProps>((props, ref) => {
