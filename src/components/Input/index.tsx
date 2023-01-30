@@ -49,7 +49,7 @@ export const Input = React.forwardRef<InputRef, InputProps>((props, ref) => {
   }
 
   const [rows, setRows] = useState(initialRows);
-  const [lineHeight, setLineHeight] = useState(21);
+  const [lineHeight] = useState(21);
   const inputRef = useForwardRef<any>(ref);
   const theme = useContext(ThemeContext);
   const variant = oVariant || (theme === 'light' ? 'flushed' : 'outline');
