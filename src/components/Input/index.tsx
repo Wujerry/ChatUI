@@ -56,16 +56,16 @@ export const Input = React.forwardRef<InputRef, InputProps>((props, ref) => {
   const isMultiline = multiline || autoSize || oRows > 1;
   const Element = isMultiline ? 'textarea' : 'input';
 
-  useEffect(() => {
-    if (!inputRef.current) return;
+  // useEffect(() => {
+  //   if (!inputRef.current) return;
 
-    const lhStr = getComputedStyle(inputRef.current, null).lineHeight;
-    const lh = Number(lhStr.replace('px', ''));
+  //   const lhStr = getComputedStyle(inputRef.current, null).lineHeight;
+  //   const lh = Number(lhStr.replace('px', ''));
 
-    if (lh !== lineHeight) {
-      setLineHeight(lh);
-    }
-  }, [inputRef, lineHeight]);
+  //   if (lh !== lineHeight) {
+  //     setLineHeight(lh);
+  //   }
+  // }, [inputRef, lineHeight]);
 
   const updateRow = useCallback(() => {
     if (!autoSize || !inputRef.current) return;
