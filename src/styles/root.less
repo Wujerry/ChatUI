@@ -1,4 +1,4 @@
-:root {
+:root,page {
   --brand-1: @brand-1;
   --brand-2: @brand-2;
   --brand-3: @brand-3;
@@ -43,14 +43,14 @@
 }
 
 @supports (top: constant(safe-area-inset-top)) {
-  :root {
+  :root,page {
     --safe-top: constant(safe-area-inset-top);
     --safe-bottom: constant(safe-area-inset-bottom);
   }
 }
 
 @supports (top: env(safe-area-inset-top)) {
-  :root {
+  :root,page {
     --safe-top: env(safe-area-inset-top);
     --safe-bottom: env(safe-area-inset-bottom);
   }
